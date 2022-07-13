@@ -9,11 +9,9 @@ I have not made efforts to test earlier versions of angular with version 3.x of 
 
 ### Installation
 
-Use your preferred package manager
 ```
-npm install ng2-daterangepicker
-yarn add ng2-daterangepicker
-ng add ng2-daterangepicker
+npm install https://github.com/vijaymsrd/ng2-daterangepicker13.git --save
+
 ```
 
 #### peerDependencies
