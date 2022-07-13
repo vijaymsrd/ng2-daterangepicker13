@@ -1,0 +1,42 @@
+{
+  "name": "ng2-daterangepicker",
+  "version": "13.0.0",
+  "description": "Modified from version 3.0.1, updated for Angular 13.x.x",
+  "homepage": "https://github.com/evansmwendwa/ng2-daterangepicker#readme",
+  "license": "MIT",
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "peerDependencies": {
+    "@angular/common": "^13.0.0",
+    "@angular/core": "^13.0.0",
+    "daterangepicker": "^3.0.5",
+    "jquery": "^3.6.0",
+    "@types/jquery": "^3.5.14"
+  },
+  "sideEffects": [
+    "*.css"
+  ],
+  "module": "fesm2015/ng2-daterangepicker.mjs",
+  "es2020": "fesm2020/ng2-daterangepicker.mjs",
+  "esm2020": "esm2020/ng2-daterangepicker.mjs",
+  "fesm2020": "fesm2020/ng2-daterangepicker.mjs",
+  "fesm2015": "fesm2015/ng2-daterangepicker.mjs",
+  "typings": "ng2-daterangepicker.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./ng2-daterangepicker.d.ts",
+      "esm2020": "./esm2020/ng2-daterangepicker.mjs",
+      "es2020": "./fesm2020/ng2-daterangepicker.mjs",
+      "es2015": "./fesm2015/ng2-daterangepicker.mjs",
+      "node": "./fesm2015/ng2-daterangepicker.mjs",
+      "default": "./fesm2020/ng2-daterangepicker.mjs"
+    }
+  },
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy in full compilation mode. This is not allowed.\\nPlease delete and rebuild the package with Ivy partial compilation mode, before attempting to publish.\\n')\" && exit 1"
+  }
+}
